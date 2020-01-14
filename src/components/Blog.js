@@ -10,6 +10,7 @@ import Resouce from './Program';
 import {Link} from 'gatsby'
 
 const images = [One, Two, Three]
+const titles = ['One', 'Two', 'Three']
 const word = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "
 
 
@@ -25,7 +26,7 @@ export default (props)=>(
         <MinusIcon />
       </div>
       <section className="article-container">
-        {images.map((img) => <Articles image={img} title="One" content={word} />)}
+        {images.map((img) => <Articles image={img} title={titles[images.indexOf(img)]} content={word} />)}
       </section>
       <button style={{ display: props.show }} className="view-button">VIEW ALL RESOURCES <IoIosArrowRoundForward className="view-arrow"/></button>
     </section>
