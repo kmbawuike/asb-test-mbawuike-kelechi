@@ -341,6 +341,9 @@ hr{
   .program{
     clear: both;
   }
+  .program, .blog-caption{
+    margin-left: 1.3rem;
+  }
 }
 
 /* Mentors */
@@ -534,22 +537,28 @@ li:hover{
   .link{
     display: none;
   }
-  .footer-container .gidra-p{
+
+  .footer-logo-container{
     display: none;
   }
-  .footer-logo-container figure{
-    margin-right: 0;
+  .footer-links-container{
+    display: block;
   }
   .footer-links{
+    display: flex;
+    width: 100%;
     justify-content: space-around;
   }
   .copy-right{
     word-spacing: 0;
+    text-align: center;
   }
   .footer-icon{
     margin-left: 0.5rem;
+    display: none;
   }
   .footer-copyright{
-    padding-top: 1.5rem;
+    display: block;
+    padding: 0;
   }
 }
